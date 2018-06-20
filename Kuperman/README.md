@@ -9,4 +9,5 @@ To create this app I used this list of modules:
 <li>SwiftyJSON - to parse JSON requests into Swift</li>
 <li>Charts - to draw the graph</li>
 </ul>
+
 You can find more information about the app on the Wiki page.
