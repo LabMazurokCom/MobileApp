@@ -13,8 +13,6 @@ enum CEXRouter: URLRequestConvertible {
     static var baseURL: String = "https://cex.io/api/ticker/"
     
     case btcusd
-    case ethusd
-    
     
     
     var method: Alamofire.HTTPMethod {
@@ -25,8 +23,6 @@ enum CEXRouter: URLRequestConvertible {
         switch self {
         case .btcusd:
             return "BTC/USD/"
-        case .ethusd:
-            return "ETH/USD/"
         }
     }
     
@@ -39,8 +35,7 @@ enum CEXRouter: URLRequestConvertible {
         let urlEncoder = URLEncoding.default
         
         switch self {
-        case .btcusd,
-             .ethusd:
+        case .btcusd:
             return try urlEncoder.encode(urlRequest, with: nil)
         }
     }
