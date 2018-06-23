@@ -13,7 +13,7 @@ enum BitfinexRouter: URLRequestConvertible {
     static var baseURL: String = "https://api.bitfinex.com/v1/pubticker/"
     
     case btcusd
-    case ethusd
+    
     
     
     var method: Alamofire.HTTPMethod {
@@ -24,8 +24,7 @@ enum BitfinexRouter: URLRequestConvertible {
         switch self {
         case .btcusd:
             return "btcusd/"
-        case .ethusd:
-            return "ethusd/"
+      
         }
     }
     
@@ -38,8 +37,7 @@ enum BitfinexRouter: URLRequestConvertible {
         let urlEncoder = URLEncoding.default
         
         switch self {
-        case .btcusd,
-             .ethusd:
+        case .btcusd:
             return try urlEncoder.encode(urlRequest, with: nil)
         }
     }
