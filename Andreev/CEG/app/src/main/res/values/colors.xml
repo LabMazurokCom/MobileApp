@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#b60f13</color>
+    <color name="colorPrimaryDark">#a50d10</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="chartDataText">#b60f13</color>
+    <color name="barChart">#ffffff</color>
+    <color name="colorMainBackground">#ffffff</color>
+    //#c45c01
+</resources>
