@@ -13,7 +13,6 @@ enum BitstampRouter: URLRequestConvertible {
     static var baseURL: String = "https://www.bitstamp.net/api/v2/ticker/"
     
     case btcusd
-    case ethusd
     
     
     
@@ -25,8 +24,6 @@ enum BitstampRouter: URLRequestConvertible {
         switch self {
         case .btcusd:
             return "btcusd/"
-        case .ethusd:
-            return "ethusd/"
         }
     }
     
@@ -39,8 +36,7 @@ enum BitstampRouter: URLRequestConvertible {
         let urlEncoder = URLEncoding.default
         
         switch self {
-        case .btcusd,
-             .ethusd:
+        case .btcusd:
             return try urlEncoder.encode(urlRequest, with: nil)
         }
     }
