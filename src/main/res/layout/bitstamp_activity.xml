@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    tools:context=".Exchanges.Exchanges_Activity.BitstampActivity">
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart_bitstamp"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:background="@color/barChart"
+        />
+
+    <TextView
+        android:id="@+id/chartDataView_bitstamp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/barChart_bitstamp"
+        android:textColor="@color/chartDataText"
+        android:textAlignment="center"
+        android:paddingTop="25dp"
+        android:textSize="20dp"/>
+
+</RelativeLayout>
