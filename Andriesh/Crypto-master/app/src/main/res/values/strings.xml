@@ -1,0 +1,5 @@
+<resources>
+   <string name="app_name">CryptoHeaps</string>
+    <string name="bchusd">BCHUSD</string>
+    <string name="btcusd">BTCUSD</string>
+</resources>
